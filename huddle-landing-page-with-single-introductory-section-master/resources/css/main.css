@@ -1,0 +1,158 @@
+/** GLOBAL STYLES **/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* font-family: 'Poppins', sans-serif;*/
+  font-family: "Open Sans", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 112rem;
+  margin: 0 auto;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 67rem) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+}
+li {
+  list-style: none;
+}
+
+/** TYPOGRAPHY **/
+.heading-1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.lead {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  line-height: 1.4;
+}
+
+/** HEADER **/
+
+.header {
+  padding: 3rem 0;
+  margin: 0 5vw;
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+.logo img {
+  max-width: 15rem;
+  max-height: 7rem;
+}
+
+/* CONTENT SECTION */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin: 5vw;
+}
+
+.content__img img {
+  width: 100%;
+}
+
+@media (max-width: 67rem) {
+  .content__img {
+    margin-bottom: 3rem;
+  }
+}
+
+.content__text {
+  padding: 4.5rem 6rem;
+  color: #f5f5f5;
+}
+
+.content__btn {
+  background-color: #f5f5f5;
+  padding: 1rem 4rem;
+  border-radius: 20rem;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  display: inline-block;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.content__btn:hover {
+  background-color: #fff;
+}
+
+.content__btn:active {
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+}
+
+@media (max-width: 67rem) {
+  .heading-1 {
+    font-size: 2.4rem;
+  }
+  .lead {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .content__text {
+    padding: 1rem 4rem;
+    text-align: center;
+  }
+  .content__btn {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+/** FOOTER SECTION**/
+
+.footer {
+  margin: 5rem 5vw;
+  margin-bottom: 3rem;
+  text-align: right;
+}
+
+@media (max-width: 67rem) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer__list li {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.footer a {
+  color: #fff;
+  border-radius: 50%;
+}
